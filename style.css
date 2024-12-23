@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .ball1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: lightcoral;
+    box-shadow: 0px 0px 13px 0.5px black;
+    transform: translate(-280px,-220px);
+}
+.main .ball2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: tomato;
+    box-shadow: 0px 0px 13px 0.5px black;
+    transform: translate(440px,180px);
+}
+.main .ball3{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: lawngreen;
+    box-shadow: 0px 0px 13px 0.5px black;
+    transform: translate(-800px,230px);
+}
+.main .box{
+    height: 88%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1s);
+    border-radius: 16px;
+    border: 2px solid white;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    box-shadow: -12px 12px 10px rgba(10, 10, 10, 0.7);
+}
+.box .nav{
+    height: 10%;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.box .nav h2{
+    font-size: 36px;
+    filter: drop-shadow(2px 2px black);
+    color: snow;
+}
+.nav .links{
+    width: 24%;
+}
+.nav .links li{
+    display: flex;
+    justify-content: space-between;
+}
+.links li a{
+    color: snow;
+    cursor: pointer;
+    transition: 0.3s  ease;
+}
+.links li a:hover{
+    color: tomato;
+
+}
+
+.box .under-main{
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+.under-main .text{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.text h1{
+    font-size: 100px;
+    color: snow;
+}
+.text h2{
+    font-size: 30px;
+    margin-top: 20px;
+    color: snow;
+}
+
+.text p{
+    color: aliceblue;
+    font-size: 24px;
+    line-height: 30px;
+    word-spacing: 5px;
+    margin-top: 30px;
+}
+
+.under-main .buttons{
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+.buttons button{
+    font-size: 24px;
+    padding: 12px 20px;
+    color: snow;
+    background-color: transparent;
+    border-radius: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    border: 2px solid snow;
+    transition: 0.4s ease;
+}
+button:hover{
+    background-color: snow;
+    color: black;
+    transform: translateY(-2px)
+}
+
+
+@media (max-width: 575px) {
+    
+    .main{
+        min-width: 100vw;
+        height: 100%;
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .main .box{
+        margin: auto;
+        min-width: 95%;
+    }
+
+    .main .nav li{
+        display: flex;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+     .nav li{
+        margin-right: 300px;
+        background-color: red;
+     }
+    .nav li a{
+       margin-right: 10px;
+    }
+    .nav .links{
+        margin-right: 55px;
+    }
+    .main .nav ul{
+        color: snow;
+        justify-content: center;
+        display: flex;
+        font-size: 24px;
+    }
+    .nav ul:hover{
+       color: red;
+       cursor: pointer;
+    }
+
+    .main .under-main h1{
+        font-size: 38px;
+    }
+    .under-main h2{
+        font-size: 24px;
+    }
+    .under-main p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .main .box{
+        height: 100%;
+    }
+}
+
+
+
+/* ----------- contact page -------------  */
+#contact-link{
+    display: flex;
+    justify-content: space-around;
+}
+.text label{
+    color: snow;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.text input{
+    padding: 3px 7px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.text textarea{
+    padding: 2px 7px;
+}
+
+
+#php-body{
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+}
+#php-body h1{
+    color: snow;
+}
+#php-body h3{
+    color: snow;
+}
+#php-body #myTextarea{
+    margin-bottom: 20px;
+    color: red;
+    display: none;
+}
+#php-body #downloadButton{
+    padding: 3px 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+

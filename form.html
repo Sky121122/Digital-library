@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>digLib/form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin: 0;
+    }
+
+    .form-container {
+      background: darkslategray;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: snow;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: snow;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-container input:focus {
+      border-color: tomato;
+      outline: none;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: tomato;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: rgb(222, 63, 35);
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Book Details Form</h2>
+    <form action="./php/main2.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="book-name">Book Name 1:</label>
+      <input type="text" id="book-name" name="book-name1" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 1:</label>
+      <input type="url" id="book-link" name="book-link1" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 2:</label>
+      <input type="text" id="book-name" name="book-name2" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 2:</label>
+      <input type="url" id="book-link" name="book-link2" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 3:</label>
+      <input type="text" id="book-name" name="book-name3" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 3:</label>
+      <input type="url" id="book-link" name="book-link3" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 4:</label>
+      <input type="text" id="book-name" name="book-name4" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 4:</label>
+      <input type="url" id="book-link" name="book-link4" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 5:</label>
+      <input type="text" id="book-name" name="book-name5" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 5:</label>
+      <input type="url" id="book-link" name="book-link5" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 6:</label>
+      <input type="text" id="book-name" name="book-name6" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 6:</label>
+      <input type="url" id="book-link" name="book-link6" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 7:</label>
+      <input type="text" id="book-name" name="book-name7" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 7:</label>
+      <input type="url" id="book-link" name="book-link7" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 8:</label>
+      <input type="text" id="book-name" name="book-name8" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 8:</label>
+      <input type="url" id="book-link" name="book-link8" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 9:</label>
+      <input type="text" id="book-name" name="book-name9" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 9:</label>
+      <input type="url" id="book-link" name="book-link9" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 10:</label>
+      <input type="text" id="book-name" name="book-name10" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 10:</label>
+      <input type="url" id="book-link" name="book-link10" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 11:</label>
+      <input type="text" id="book-name" name="book-name11" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 11:</label>
+      <input type="url" id="book-link" name="book-link11" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 12:</label>
+      <input type="text" id="book-name" name="book-name12" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 12:</label>
+      <input type="url" id="book-link" name="book-link12" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 13:</label>
+      <input type="text" id="book-name" name="book-name13" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 13:</label>
+      <input type="url" id="book-link" name="book-link13" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 14:</label>
+      <input type="text" id="book-name" name="book-name14" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 14:</label>
+      <input type="url" id="book-link" name="book-link14" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 15:</label>
+      <input type="text" id="book-name" name="book-name15" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 15:</label>
+      <input type="url" id="book-link" name="book-link15" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 16:</label>
+      <input type="text" id="book-name" name="book-name16" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 16:</label>
+      <input type="url" id="book-link" name="book-link16" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 17:</label>
+      <input type="text" id="book-name" name="book-name17" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 17:</label>
+      <input type="url" id="book-link" name="book-link17" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 18:</label>
+      <input type="text" id="book-name" name="book-name18" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 18:</label>
+      <input type="url" id="book-link" name="book-link18" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 19:</label>
+      <input type="text" id="book-name" name="book-name19" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 19:</label>
+      <input type="url" id="book-link" name="book-link19" placeholder="Enter the book link" >
+
+      <label for="book-name">Book Name 20:</label>
+      <input type="text" id="book-name" name="book-name20" placeholder="Enter the book name" required>
+
+      <label for="book-link">Book Link 20:</label>
+      <input type="url" id="book-link" name="book-link20" placeholder="Enter the book link" >
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
